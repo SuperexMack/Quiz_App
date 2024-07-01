@@ -13,7 +13,7 @@ function Navbar(){
            <div className="flex justify-center items center absolute right-36 gap-8">
                <div onClick={()=>window.location.href="/"} className="bg-blue-600 text-3xl text-white rounded-[5px]  justify-center items-center p-2 hidden md:flex md:transition-transform duration-400 ease-in-out md:hover:scale-130 sm:hover:scale-130">Home</div>
                <div onClick={()=>window.location.href="https://leetcode.com/u/MackWalker/"} className="bg-blue-600 text-3xl text-white rounded-[5px]  justify-center items-center p-2 hidden md:flex md:transition-transform duration-300 ease-in-out md:hover:scale-130 sm:hover:scale-130">Code</div>
-               <div className="bg-blue-600 text-3xl text-white rounded-[5px]  justify-center items-center p-2 hidden md:flex md:transition-transform duration-300 ease-in-out md:hover:scale-130 sm:hover:scale-130">Contribute</div>
+               <div onClick={()=>window.location.href="https://github.com/SuperexMack/Quiz_App"} className="bg-blue-600 text-3xl text-white rounded-[5px]  justify-center items-center p-2 hidden md:flex md:transition-transform duration-300 ease-in-out md:hover:scale-130 sm:hover:scale-130">Contribute</div>
                <div onClick={caller} className="text-violet-500  text-4xl top-8 flex justify-center items-center relative md:left-24 left-32 md:hidden"><i className="fa-sharp fa-solid fa-bars"></i></div>
            </div>
         </div>
@@ -25,7 +25,7 @@ function Navbar(){
                <img className="relative top-[-10px] h-[100px] w-[200px]" src={quizPhoto}></img>
                <div onClick={()=>window.location.href = "/"} className="bg-blue-600 text-3xl text-white rounded-[5px] flex justify-center items-center p-2">Home</div>
                <div  onClick={()=>window.location.href="https://leetcode.com/u/MackWalker/"} className="bg-blue-600 text-3xl text-white rounded-[5px] flex justify-center items-center p-2">Code</div>
-               <div className="bg-blue-600 text-3xl text-white rounded-[5px] flex justify-center items-center p-2">Contribute</div>
+               <div  onClick={()=>window.location.href="https://github.com/SuperexMack/Quiz_App"} className="bg-blue-600 text-3xl text-white rounded-[5px] flex justify-center items-center p-2">Contribute</div>
            </div>
         </div>
         )}
