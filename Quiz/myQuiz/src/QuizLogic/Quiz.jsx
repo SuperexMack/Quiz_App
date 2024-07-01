@@ -122,7 +122,7 @@ function Quiz(){
     return(
         <>
         <div className=" w-full flex justify-center items-center h-[600px] flex-wrap">
-            <div className="bg-violet-400  md:h-[550px] md:w-[560px] rounded-xl p-10 cursor-pointer sm:h-[500px] sm:w-[450px] h-[490px] w-[330px]">
+            <div className="bg-violet-400  md:h-[550px] md:w-[560px] rounded-xl p-10 cursor-pointer sm:h-[500px] sm:w-[450px] h-[500px] w-[330px]">
               <h1 className="md:text-2xl font-medium sm:text-[23px] text-[15px]">{quiz[valueOfQuestion][0]}</h1>
               
               
@@ -150,7 +150,7 @@ function Quiz(){
               <div className="absolute bg-white inset-0 bg-opacity-80 flex justify-center items-center">
               <div className="bg-gray-600 rounded-[20px] text-white flex flex-col justify-center items-center w-[350px] h-[300px] z-10">
                 <h1 className="text-2xl font-extrabold">Your total score is : {totalScore}</h1>
-                  <button className="absolute top-[400px] bg-red-500 text-white p-4 rounded-[10px] font-semibold" onClick={closeBtn}>Restart</button>
+                  <button className="relative top-[10px] bg-red-500 text-white p-4 rounded-[10px] font-semibold" onClick={closeBtn}>Restart</button>
               </div>
               </div>
              
