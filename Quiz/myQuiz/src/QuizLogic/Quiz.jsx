@@ -122,28 +122,28 @@ function Quiz(){
     return(
         <>
         <div className=" w-full flex justify-center items-center h-[600px] flex-wrap">
-            <div className="bg-violet-400  md:h-[550px] md:w-[560px] rounded-xl p-10 cursor-pointer sm:h-[500px] sm:w-[450px] h-[430px] w-[300px]">
-              <h1 className="md:text-2xl font-medium sm:text-[23px] text-[20px]">{quiz[valueOfQuestion][0]}</h1>
+            <div className="bg-violet-400  md:h-[550px] md:w-[560px] rounded-xl p-10 cursor-pointer sm:h-[500px] sm:w-[450px] h-[490px] w-[330px]">
+              <h1 className="md:text-2xl font-medium sm:text-[23px] text-[15px]">{quiz[valueOfQuestion][0]}</h1>
               
               
               <div className="relative top-4 p-4">
                 <input className="h-7 w-7 cursor-pointer text-xl" type="radio" value='a' checked={onchecked==='a'} onChange={HandleClick}></input>
-                <span className="ml-2 font-extrabold text-xl relative bottom-2">{quiz[valueOfQuestion][1]}</span>
+                <span className="ml-2 md:font-extrabold md:text-xl text-[14px] relative bottom-2">{quiz[valueOfQuestion][1]}</span>
               </div>
 
               <div className="relative top-4 p-4">
                 <input className="h-7 w-7 cursor-pointer" type="radio" value='b' checked={onchecked==='b'} onChange={HandleClick}></input>
-                <span className="ml-2 font-extrabold text-xl relative bottom-2">{quiz[valueOfQuestion][2]}</span>
+                <span className="ml-2 md:font-extrabold md:text-xl text-[14px] relative bottom-2">{quiz[valueOfQuestion][2]}</span>
               </div>
 
               <div className="relative top-4 p-4">
                 <input className="h-7 w-7 cursor-pointer" type="radio" value='c' checked={onchecked==='c'} onChange={HandleClick}></input>
-                <span className="ml-2 font-extrabold text-xl relative bottom-2">{quiz[valueOfQuestion][3]}</span>
+                <span className="ml-2 md:font-extrabold md:text-xl text-[14px] relative bottom-2">{quiz[valueOfQuestion][3]}</span>
               </div>
 
               <div className="relative top-4 p-4">
                 <input className="h-7 w-7 cursor-pointer" type="radio" value='d' checked={onchecked==='d'} onChange={HandleClick}></input>
-                <span className="ml-2 font-extrabold text-xl relative bottom-2">{quiz[valueOfQuestion][4]}</span>
+                <span className="ml-2 md:font-extrabold md:text-xl text-[14px] relative bottom-2">{quiz[valueOfQuestion][4]}</span>
               </div>
              
              {final &&(
@@ -156,7 +156,7 @@ function Quiz(){
              
              )}
              
-              <button className="bg-green-400 p-2 md:w-[200px] sm:w-[200px] flex justify-center items-center  relative md:top-[50px] md:left-[24%]  sm:top-[30px] sm:left-[24%] top-[10px] left-[15%] text-[20px] h-[40px] w-[150px] rounded-xl font-extrabold text-white md:text-3xl sm:text-2xl md:transition-transform duration-300 ease-in-out md:hover:scale-130 sm:hover:scale-130" onClick={changer}>Next</button>
+              <button className="bg-green-400 p-2 md:w-[200px] sm:w-[200px] flex justify-center items-center  relative md:top-[50px] md:left-[24%]  sm:top-[30px] sm:left-[24%] top-[13px] left-[15%] text-[20px] h-[30px] w-[150px] rounded-xl font-extrabold text-white md:text-3xl sm:text-2xl md:transition-transform duration-300 ease-in-out md:hover:scale-130 sm:hover:scale-130" onClick={changer}>Next</button>
             </div>
         </div>
         </>
